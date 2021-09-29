@@ -21,7 +21,7 @@ export const Container = styled.div`
     font-size: 1.3rem;
     font-weight: normal;
     line-height: 1.2;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
     color: #5e5873;
   }
   .heading-text {
@@ -110,7 +110,7 @@ export const Container = styled.div`
     display: flex;
     width: 100%;
     align-items: center;
-    margin: 1.5rem 0 1rem 0;
+    margin: 1.5rem 0 0.5rem 0;
     .heading-socials-divider-text {
       color: #6e6b7b;
       font-size: 0.9rem;
@@ -137,6 +137,7 @@ export const Container = styled.div`
     }
     .heading-socials-icon:hover {
       cursor: pointer;
+      box-shadow: 0 8px 25px -8px #7367f0;
     }
   }
 `;

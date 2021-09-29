@@ -17,7 +17,7 @@ function Login() {
       </div>
       <h1 className="heading-title">Welcome to Vuexy! 👋</h1>
       <span className="heading-text">
-        Please sign-in to your account and start the adventure
+        Please sign-in to your account and start the adventure.
       </span>
       <div className="heading-modal">
         <span className="heading-modal-title">
@@ -29,7 +29,7 @@ function Login() {
       </div>
       <div>
         <div className="heading-label-container">
-          <label className="heading-label" for="email">
+          <label className="heading-label" htmlFor="email">
             Email
             <input
               className="heading-input"
@@ -39,18 +39,18 @@ function Login() {
           </label>
         </div>
         <div className="heading-label-container">
-          <label className="heading-label" for="password">
+          <label className="heading-label" htmlFor="password">
             Password
             <input
               className="heading-input"
               type="password"
               name="password"
-              value="admin"
+              defaultValue="admin"
             ></input>
           </label>
         </div>
         <div className="heading-remember">
-          <label className="heading-remember" for="remeber me">
+          <label className="heading-remember" htmlFor="remeber me">
             Remember Me
             <input
               className="heading-remember-checkbox"
@@ -60,7 +60,7 @@ function Login() {
           </label>
         </div>
         <Button className="heading-button">Sign In</Button>
-        <div class="heading-socials">
+        <div className="heading-socials">
           <span className="heading-socials-title">
             New on our platform?{" "}
             <a className="heading-socials-link" href="/">
