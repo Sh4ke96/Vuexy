@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container } from "./login.styled";
 import Button from "../button/button";
 import {
@@ -63,9 +64,9 @@ function Login() {
         <div className="heading-socials">
           <span className="heading-socials-title">
             New on our platform?{" "}
-            <a className="heading-socials-link" href="/">
+            <Link to="/register" className="heading-socials-link">
               Create an account
-            </a>
+            </Link>
           </span>
           <div className="heading-socials-divider">
             <div className="heading-socials-divider-element"></div>
