@@ -1,7 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem 2rem;
+  @media only screen and (min-width: 1165px) {
+    align-items: initial;
+  }
   header {
     max-height: 30px;
     .heading {
@@ -24,25 +30,30 @@ export const Container = styled.div`
     display: flex;
     height: calc(100vh - 60px);
     .left-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex: 0 0 66.66667%;
-      max-width: 66.66667%;
-      margin-right: 1rem;
+      display: none;
+      @media only screen and (min-width: 1165px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+        margin-right: 1rem;
+      }
       .login-bg {
         max-width: 100%;
         height: auto;
       }
     }
     .right-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex: 0 0 33.33333%;
-      max-width: 33%;
-      padding: 0 4rem;
+      @media only screen and (min-width: 1165px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 33.33333%;
+        max-width: 33%;
+        padding: 0 4rem;
+      }
       .heading-title {
         font-size: 1.3rem;
         font-weight: normal;
